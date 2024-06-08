@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  ansible_host1:
+    image: ubuntu:latest
+    container_name: ansible_host1
+    networks:
+      - ansible_net
+    tty: true
+
+  ansible_host2:
+    image: ubuntu:latest
+    container_name: ansible_host2
+    networks:
+      - ansible_net
+    tty: true
+
+networks:
+  ansible_net:
+    driver: bridge

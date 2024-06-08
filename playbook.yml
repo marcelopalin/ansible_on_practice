@@ -1,0 +1,8 @@
+---
+- name: Testar Ansible no Docker
+  hosts: servers
+  tasks:
+    - name: Instalar pacote 'tree'
+      apt:
+        name: tree
+        state: present
