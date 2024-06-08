@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   ansible_host1:
     image: ubuntu:latest
