@@ -1,0 +1,17 @@
+---
+# tasks file for roles/nvm
+- name: Baixar script de instalação do NVM
+  shell: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+- name: Adicionar NVM ao perfil
+  lineinfile:
+    dest: ~/.bashrc
+    regexp: 'export NVM_DIR="\$HOME/.nvm"'
+    line: 'export NVM_DIR="$HOME/.nvm"'
+    insertafter: EOF
+
+- name: Carregar NVM e instalar Node.js
+  shell: |
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm install --lts

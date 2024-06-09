@@ -95,6 +95,7 @@ services:
     networks:
       - ansible_net
     tty: true
+    restart: always
 
   ansible_host2:
     image: ubuntu:latest
@@ -102,6 +103,7 @@ services:
     networks:
       - ansible_net
     tty: true
+    restart: always
 
 networks:
   ansible_net:
@@ -163,9 +165,7 @@ Copie a chave pública para os containers:
 
 ```s
 docker exec -it ansible_host1 bash -c "apt update && apt install -y openssh-server && mkdir -p /root/.ssh && echo '$(cat ~/.ssh/id_rsa_ansible.pub)' >> /root/.ssh/authorized_keys"
-
 docker exec -it ansible_host2 bash -c "apt update && apt install -y openssh-server && mkdir -p /root/.ssh && echo '$(cat ~/.ssh/id_rsa_ansible.pub)' >> /root/.ssh/authorized_keys"
-
 ```
 
 Atenção: você será perguntado para responder os códigos abaixo.
@@ -467,3 +467,5 @@ Agora você tem um ambiente de testes configurado com dois servidores Ubuntu, pr
 Recursos Adicionais
 
 Para mais informações sobre Ansible, consulte a documentação oficial do Ansible.
+
+- Vou iniciar um Tutorial sobre ansible na pasta `docs`

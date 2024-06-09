@@ -1,0 +1,21 @@
+# Ignore the Dockerfile and .dockerignore file
+Dockerfile
+.dockerignore
+
+# Ignore directories that are not needed in the Docker image
+ansible.cfg
+hosts
+playbook.yml
+roles/
+
+# Ignore hidden files and directories
+.*
+!.ssh/
+
+# Ignore temporary files
+*.swp
+*.tmp
+*~
+
+# Não ignore a chave pública que acabamos de copiar
+!id_rsa_ansible.pub

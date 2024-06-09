@@ -1,0 +1,48 @@
+---
+- name: Configurar Zsh com Agnoster e plugins
+  hosts: servers
+  become: yes
+  tasks:
+    - name: Instalar pacotes necessários
+      apt:
+        name:
+          - zsh
+          - git
+        state: present
+        update_cache: yes
+
+    - name: Definir Zsh como shell padrão
+      shell: chsh -s /bin/zsh root
+
+    - name: Clonar oh-my-zsh
+      git:
+        repo: https://github.com/ohmyzsh/ohmyzsh.git
+        dest: /root/.oh-my-zsh
+
+    - name: Copiar o arquivo .zshrc de exemplo
+      copy:
+        src: /root/.oh-my-zsh/templates/zshrc.zsh-template
+        dest: /root/.zshrc
+        remote_src: yes
+
+    - name: Configurar tema Agnoster no .zshrc
+      lineinfile:
+        path: /root/.zshrc
+        regexp: '^ZSH_THEME='
+        line: 'ZSH_THEME="agnoster"'
+
+    - name: Clonar o plugin zsh-autosuggestions
+      git:
+        repo: https://github.com/zsh-users/zsh-autosuggestions.git
+        dest: /root/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+    - name: Clonar o plugin zsh-syntax-highlighting
+      git:
+        repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+        dest: /root/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+    - name: Adicionar plugins ao .zshrc
+      lineinfile:
+        path: /root/.zshrc
+        regexp: '^plugins='
+        line: 'plugins=(git zsh-autosuggestions zsh-syntax-highlighting)'

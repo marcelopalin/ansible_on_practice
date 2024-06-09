@@ -1,18 +1,25 @@
 services:
   ansible_host1:
-    image: ubuntu:latest
+    build: .
     container_name: ansible_host1
     networks:
-      - ansible_net
+      ansible_net:
+        ipv4_address: 172.32.0.2
     tty: true
+    restart: always
 
   ansible_host2:
-    image: ubuntu:latest
+    build: .
     container_name: ansible_host2
     networks:
-      - ansible_net
+      ansible_net:
+        ipv4_address: 172.32.0.3
     tty: true
+    restart: always
 
 networks:
   ansible_net:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.32.0.0/16

@@ -1,6 +1,0 @@
-[servers]
-ansible_host1 ansible_host=172.25.0.2 ansible_user=root ansible_ssh_private_key_file=~/.ssh/id_rsa_ansible
-ansible_host2 ansible_host=172.25.0.3 ansible_user=root ansible_ssh_private_key_file=~/.ssh/id_rsa_ansible
-
-[all:vars]
-ansible_python_interpreter=/usr/bin/python3

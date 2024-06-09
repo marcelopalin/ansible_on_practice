@@ -1,8 +1,21 @@
 ---
-- name: Testar Ansible no Docker
-  hosts: servers
+- name: Configurar servidores
+  hosts: localhost
   tasks:
-    - name: Instalar pacote 'tree'
-      apt:
-        name: tree
-        state: present
+    - name: Remover entradas antigas de known_hosts
+      local_action: command ssh-keygen -f "/home/mpi/.ssh/known_hosts" -R "172.32.0.2"
+    - name: Remover entradas antigas de known_hosts
+      local_action: command ssh-keygen -f "/home/mpi/.ssh/known_hosts" -R "172.32.0.3"
+
+- name: Configurar servidores
+  hosts: servers
+  become: yes
+  vars:
+    ssh_key: "{{ lookup('file', '~/.ssh/id_rsa_ansible') }}"
+    ssh_pub_key: "{{ lookup('file', '~/.ssh/id_rsa_ansible.pub') }}"
+    ssh_config: "{{ lookup('file', '~/config') }}"
+  roles:
+    - role: common
+    - role: nvm
+    - role: golang
+    - role: ssh
