@@ -133,3 +133,87 @@
 2024-06-09 02:27:06,871 p=28438 u=mpi n=ansible | ok: [ansible_host2]
 2024-06-09 02:27:06,872 p=28438 u=mpi n=ansible | ok: [ansible_host1]
 2024-06-09 02:27:06,883 p=28438 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 02:27:57,311 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:00,518 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:00,527 p=28438 u=mpi n=ansible | TASK [nvm : Baixar script de instalação do NVM] ****************************************************************************
+2024-06-09 02:28:02,993 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:02,996 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:02,999 p=28438 u=mpi n=ansible | TASK [nvm : Adicionar NVM ao perfil] ***************************************************************************************
+2024-06-09 02:28:03,250 p=28438 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:28:03,251 p=28438 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:28:03,254 p=28438 u=mpi n=ansible | TASK [nvm : Carregar NVM e instalar Node.js] *******************************************************************************
+2024-06-09 02:28:06,784 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:07,279 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:07,286 p=28438 u=mpi n=ansible | TASK [golang : Baixar e instalar Golang] ***********************************************************************************
+2024-06-09 02:28:11,880 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:13,956 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:13,959 p=28438 u=mpi n=ansible | TASK [golang : Extrair Golang] *********************************************************************************************
+2024-06-09 02:28:20,012 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:20,017 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:20,021 p=28438 u=mpi n=ansible | TASK [golang : Adicionar Golang ao perfil] *********************************************************************************
+2024-06-09 02:28:20,211 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:20,211 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:20,219 p=28438 u=mpi n=ansible | TASK [ssh : Gerar chave SSH se não existir] ********************************************************************************
+2024-06-09 02:28:20,537 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:20,592 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:20,596 p=28438 u=mpi n=ansible | TASK [ssh : Copiar chave pública] ******************************************************************************************
+2024-06-09 02:28:21,042 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:21,043 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:21,046 p=28438 u=mpi n=ansible | TASK [ssh : Copiar chave privada] ******************************************************************************************
+2024-06-09 02:28:21,397 p=28438 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:28:21,397 p=28438 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:28:21,400 p=28438 u=mpi n=ansible | TASK [ssh : Copiar arquivo de configuração SSH] ****************************************************************************
+2024-06-09 02:28:21,410 p=28438 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"msg": "An unhandled exception occurred while templating '{{ lookup('file', '~/config') }}'. Error was a <class 'ansible.errors.AnsibleLookupError'>, original message: The 'file' lookup had an issue accessing the file '~/config'. file not found, use -vvvvv to see paths searched"}
+2024-06-09 02:28:21,416 p=28438 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"msg": "An unhandled exception occurred while templating '{{ lookup('file', '~/config') }}'. Error was a <class 'ansible.errors.AnsibleLookupError'>, original message: The 'file' lookup had an issue accessing the file '~/config'. file not found, use -vvvvv to see paths searched"}
+2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | ansible_host1              : ok=11   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | ansible_host2              : ok=11   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:30:57,634 p=4688 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:30:57,648 p=4688 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:30:58,515 p=4688 u=mpi n=ansible | ok: [localhost]
+2024-06-09 02:30:58,527 p=4688 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 02:30:58,708 p=4688 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:30:58,713 p=4688 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 02:30:58,839 p=4688 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:30:58,863 p=4688 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:30:58,866 p=4688 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:30:59,527 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:30:59,539 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:30:59,549 p=4688 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 02:31:03,072 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:03,227 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:03,235 p=4688 u=mpi n=ansible | TASK [nvm : Baixar script de instalação do NVM] ****************************************************************************
+2024-06-09 02:31:04,715 p=4688 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:31:04,734 p=4688 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:31:04,738 p=4688 u=mpi n=ansible | TASK [nvm : Adicionar NVM ao perfil] ***************************************************************************************
+2024-06-09 02:31:04,968 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:04,969 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:04,972 p=4688 u=mpi n=ansible | TASK [nvm : Carregar NVM e instalar Node.js] *******************************************************************************
+2024-06-09 02:31:05,704 p=4688 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:31:05,705 p=4688 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:31:05,712 p=4688 u=mpi n=ansible | TASK [golang : Baixar e instalar Golang] ***********************************************************************************
+2024-06-09 02:31:07,016 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:07,207 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:07,210 p=4688 u=mpi n=ansible | TASK [golang : Extrair Golang] *********************************************************************************************
+2024-06-09 02:31:11,116 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:11,140 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:11,143 p=4688 u=mpi n=ansible | TASK [golang : Adicionar Golang ao perfil] *********************************************************************************
+2024-06-09 02:31:11,328 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:11,332 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:11,341 p=4688 u=mpi n=ansible | TASK [ssh : Gerar chave SSH se não existir] ********************************************************************************
+2024-06-09 02:31:11,510 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:11,513 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:11,516 p=4688 u=mpi n=ansible | TASK [ssh : Copiar chave pública] ******************************************************************************************
+2024-06-09 02:31:11,905 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:11,905 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:11,908 p=4688 u=mpi n=ansible | TASK [ssh : Copiar chave privada] ******************************************************************************************
+2024-06-09 02:31:12,240 p=4688 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:31:12,240 p=4688 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:31:12,243 p=4688 u=mpi n=ansible | TASK [ssh : Copiar arquivo de configuração SSH] ****************************************************************************
+2024-06-09 02:31:12,629 p=4688 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 02:31:12,630 p=4688 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | ansible_host1              : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | ansible_host2              : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
