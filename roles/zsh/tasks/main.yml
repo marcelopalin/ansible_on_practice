@@ -1,0 +1,56 @@
+---
+- name: Instalar Zsh
+  become: yes
+  apt:
+    name: zsh
+    state: present
+    update_cache: yes
+
+- name: Definir Zsh como shell padrão para o usuário {{ target_user }}
+  become: yes
+  shell: chsh -s /usr/bin/zsh "{{ target_user }}"
+
+- name: Clonar oh-my-zsh
+  become: yes
+  become_user: "{{ target_user }}"
+  git:
+    repo: https://github.com/ohmyzsh/ohmyzsh.git
+    dest: /home/{{ target_user }}/.oh-my-zsh
+
+- name: Copiar o arquivo .zshrc de exemplo
+  become: yes
+  become_user: "{{ target_user }}"
+  copy:
+    src: /home/{{ target_user }}/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: /home/{{ target_user }}/.zshrc
+    remote_src: yes
+
+- name: Configurar tema Agnoster no .zshrc
+  become: yes
+  become_user: "{{ target_user }}"
+  lineinfile:
+    path: /home/{{ target_user }}/.zshrc
+    regexp: '^ZSH_THEME='
+    line: 'ZSH_THEME="agnoster"'
+
+- name: Clonar o plugin zsh-autosuggestions
+  become: yes
+  become_user: "{{ target_user }}"
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions.git
+    dest: /home/{{ target_user }}/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+- name: Clonar o plugin zsh-syntax-highlighting
+  become: yes
+  become_user: "{{ target_user }}"
+  git:
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: /home/{{ target_user }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+- name: Adicionar plugins ao .zshrc
+  become: yes
+  become_user: "{{ target_user }}"
+  lineinfile:
+    path: /home/{{ target_user }}/.zshrc
+    regexp: '^plugins='
+    line: 'plugins=(git zsh-autosuggestions zsh-syntax-highlighting)'

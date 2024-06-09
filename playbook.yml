@@ -3,6 +3,7 @@
   hosts: localhost
   vars:
     host_user: "mpi"
+    target_user: "ubuntu"  # Variável global para o nome do usuário alvo
   tasks:
     - name: Remover entrada antiga de known_hosts para ansible_host1
       local_action: command ssh-keygen -f "/home/{{ host_user }}/.ssh/known_hosts" -R "172.32.0.2"
@@ -14,6 +15,7 @@
   become: yes
   vars:
     host_user: "mpi"
+    target_user: "ubuntu"  # Variável global para o nome do usuário alvo
     ssh_key: "{{ lookup('file', '/home/' ~ host_user ~ '/.ssh/id_rsa_ansible') }}"
     ssh_pub_key: "{{ lookup('file', '/home/' ~ host_user ~ '/.ssh/id_rsa_ansible.pub') }}"
     ssh_config: "{{ lookup('file', '/home/' ~ host_user ~ '/.ssh/config') }}"
@@ -22,3 +24,5 @@
     - role: nvm
     - role: golang
     - role: ssh
+    - role: docker
+    - role: zsh

@@ -1,6 +1,6 @@
 ---
-# tasks file for roles/common
 - name: Atualizar apt e instalar pacotes básicos
+  become: yes
   apt:
     name:
       - curl
@@ -15,6 +15,6 @@
       - tree
       - unzip
       - build-essential
-
     state: present
     update_cache: yes
+

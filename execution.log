@@ -217,3 +217,62 @@
 2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | ansible_host1              : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | ansible_host2              : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:36:20,666 p=10073 u=mpi n=ansible | - Role roles/docker was created successfully
+2024-06-09 02:36:28,013 p=10189 u=mpi n=ansible | - Role roles/zsh was created successfully
+2024-06-09 02:44:58,524 p=13966 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:44:58,528 p=13966 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:44:59,400 p=13966 u=mpi n=ansible | ok: [localhost]
+2024-06-09 02:44:59,411 p=13966 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 02:44:59,581 p=13966 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:44:59,586 p=13966 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 02:44:59,731 p=13966 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:44:59,747 p=13966 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:44:59,752 p=13966 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:44:59,825 p=13966 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.3: Permission denied (publickey).", "unreachable": true}
+2024-06-09 02:44:59,825 p=13966 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.2: Permission denied (publickey).", "unreachable": true}
+2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:45:24,093 p=14454 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:45:24,097 p=14454 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:45:24,947 p=14454 u=mpi n=ansible | ok: [localhost]
+2024-06-09 02:45:24,960 p=14454 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 02:45:25,128 p=14454 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:45:25,133 p=14454 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 02:45:25,255 p=14454 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:45:25,272 p=14454 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:45:25,278 p=14454 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:45:25,356 p=14454 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.2: Permission denied (publickey).", "unreachable": true}
+2024-06-09 02:45:25,365 p=14454 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.3: Permission denied (publickey).", "unreachable": true}
+2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:49:58,323 p=19425 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:49:58,327 p=19425 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:49:59,208 p=19425 u=mpi n=ansible | ok: [localhost]
+2024-06-09 02:49:59,219 p=19425 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 02:49:59,389 p=19425 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:49:59,394 p=19425 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 02:49:59,516 p=19425 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:49:59,532 p=19425 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:49:59,536 p=19425 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:49:59,738 p=19425 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"msg": "Missing sudo password"}
+2024-06-09 02:49:59,738 p=19425 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"msg": "Missing sudo password"}
+2024-06-09 02:49:59,738 p=19425 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 02:49:59,739 p=19425 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:49:59,739 p=19425 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:49:59,739 p=19425 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 02:52:21,576 p=20843 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:52:21,580 p=20843 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:52:22,442 p=20843 u=mpi n=ansible | ok: [localhost]
+2024-06-09 02:52:22,453 p=20843 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 02:52:22,622 p=20843 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:52:22,627 p=20843 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 02:52:22,745 p=20843 u=mpi n=ansible | changed: [localhost]
+2024-06-09 02:52:22,762 p=20843 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 02:52:22,767 p=20843 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 02:52:23,445 p=20843 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 02:52:23,446 p=20843 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 02:52:23,457 p=20843 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************

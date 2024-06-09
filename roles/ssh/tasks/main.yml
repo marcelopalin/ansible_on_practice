@@ -1,22 +1,26 @@
 ---
 - name: Gerar chave SSH se não existir
-  command: ssh-keygen -t rsa -b 2048 -f /root/.ssh/id_rsa -q -N ""
+  become: yes
+  command: ssh-keygen -t rsa -b 2048 -f /home/{{ target_user }}/.ssh/id_rsa -q -N ""
   args:
-    creates: /root/.ssh/id_rsa
+    creates: /home/{{ target_user }}/.ssh/id_rsa
 
 - name: Copiar chave pública
+  become: yes
   copy:
     content: "{{ ssh_pub_key }}"
-    dest: /root/.ssh/authorized_keys
+    dest: /home/{{ target_user }}/.ssh/authorized_keys
 
 - name: Copiar chave privada
+  become: yes
   copy:
     content: "{{ ssh_key }}"
-    dest: /root/.ssh/id_rsa
+    dest: /home/{{ target_user }}/.ssh/id_rsa
     mode: '0600'
 
 - name: Copiar arquivo de configuração SSH
+  become: yes
   copy:
     content: "{{ ssh_config }}"
-    dest: /root/.ssh/config
+    dest: /home/{{ target_user }}/.ssh/config
     mode: '0644'

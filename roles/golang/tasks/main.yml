@@ -1,19 +1,22 @@
 ---
-# tasks file for roles/golang
 - name: Baixar e instalar Golang
+  become: yes
   get_url:
     url: https://golang.org/dl/go1.16.5.linux-amd64.tar.gz
     dest: /tmp/go1.16.5.linux-amd64.tar.gz
 
 - name: Extrair Golang
+  become: yes
   unarchive:
     src: /tmp/go1.16.5.linux-amd64.tar.gz
     dest: /usr/local
     remote_src: yes
 
 - name: Adicionar Golang ao perfil
+  become: yes
+  become_user: "{{ target_user }}"
   lineinfile:
-    dest: ~/.bashrc
+    dest: /home/{{ target_user }}/.bashrc
     regexp: 'export PATH=\$PATH:/usr/local/go/bin'
     line: 'export PATH=$PATH:/usr/local/go/bin'
     insertafter: EOF

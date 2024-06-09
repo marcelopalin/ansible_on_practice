@@ -1,0 +1,43 @@
+---
+- name: Instalar dependências do Docker
+  become: yes
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+    state: present
+    update_cache: yes
+
+- name: Adicionar chave GPG do Docker
+  become: yes
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Adicionar repositório Docker
+  become: yes
+  apt_repository:
+    repo: deb https://download.docker.com/linux/ubuntu focal stable
+    state: present
+
+- name: Instalar Docker
+  become: yes
+  apt:
+    name: docker-ce
+    state: present
+
+- name: Adicionar usuário {{ target_user }} ao grupo docker
+  become: yes
+  user:
+    name: "{{ target_user }}"
+    groups: docker
+    append: yes
+
+- name: Iniciar e habilitar Docker
+  become: yes
+  systemd:
+    name: docker
+    enabled: yes
+    state: started
