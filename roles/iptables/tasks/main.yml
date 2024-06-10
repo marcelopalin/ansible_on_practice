@@ -1,0 +1,29 @@
+---
+- name: Instalar iptables-persistent
+  become: yes
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  apt:
+    name: iptables-persistent
+    state: present
+    update_cache: yes
+
+- name: Copiar regras do iptables
+  become: yes
+  copy:
+    src: rules.v4
+    dest: /etc/iptables/rules.v4
+
+- name: Copiar regras do ip6tables
+  become: yes
+  copy:
+    src: rules.v6
+    dest: /etc/iptables/rules.v6
+
+- name: Aplicar regras do iptables
+  become: yes
+  shell: iptables-legacy-restore < /etc/iptables/rules.v4
+
+- name: Aplicar regras do ip6tables
+  become: yes
+  shell: ip6tables-legacy-restore < /etc/iptables/rules.v6

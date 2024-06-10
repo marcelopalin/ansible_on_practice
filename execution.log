@@ -1,278 +1,405 @@
-2024-06-09 02:08:03,387 p=2803 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:08:03,393 p=2803 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:08:04,387 p=2803 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:08:04,399 p=2803 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:08:04,581 p=2803 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:08:04,586 p=2803 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:08:04,710 p=2803 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:08:04,728 p=2803 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:08:04,731 p=2803 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:08:14,747 p=2803 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.25.0.3 port 22: Connection timed out", "unreachable": true}
-2024-06-09 02:08:14,756 p=2803 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 172.25.0.2 port 22: Connection timed out", "unreachable": true}
-2024-06-09 02:08:14,757 p=2803 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:08:14,757 p=2803 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:08:14,757 p=2803 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:08:14,757 p=2803 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:08:54,520 p=3515 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:08:54,524 p=3515 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:08:55,400 p=3515 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:08:55,411 p=3515 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:08:55,585 p=3515 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:08:55,590 p=3515 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:08:55,710 p=3515 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:08:55,727 p=3515 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:08:55,731 p=3515 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:08:55,806 p=3515 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.3: Permission denied (publickey,password).", "unreachable": true}
-2024-06-09 02:08:55,815 p=3515 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.2: Permission denied (publickey,password).", "unreachable": true}
-2024-06-09 02:08:55,815 p=3515 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:08:55,815 p=3515 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:08:55,816 p=3515 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:08:55,816 p=3515 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:14:01,282 p=10318 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:14:01,287 p=10318 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:14:02,162 p=10318 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:14:02,174 p=10318 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:14:02,355 p=10318 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:14:02,360 p=10318 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:14:02,483 p=10318 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:14:02,501 p=10318 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:14:02,503 p=10318 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:14:02,575 p=10318 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.2: Permission denied (publickey,password).", "unreachable": true}
-2024-06-09 02:14:02,584 p=10318 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.3: Permission denied (publickey,password).", "unreachable": true}
-2024-06-09 02:14:02,585 p=10318 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:14:02,585 p=10318 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:14:02,585 p=10318 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:14:02,585 p=10318 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:20:59,841 p=18500 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:20:59,845 p=18500 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:21:00,726 p=18500 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:21:00,737 p=18500 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:21:00,916 p=18500 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:21:00,921 p=18500 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:21:01,045 p=18500 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:21:01,062 p=18500 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:21:01,065 p=18500 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:21:01,807 p=18500 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:21:01,808 p=18500 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:21:01,819 p=18500 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
-2024-06-09 02:21:42,469 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:10,582 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:10,591 p=18500 u=mpi n=ansible | TASK [nvm : Baixar script de instalação do NVM] ****************************************************************************
-2024-06-09 02:23:13,325 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:16,365 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:16,368 p=18500 u=mpi n=ansible | TASK [nvm : Adicionar NVM ao perfil] ***************************************************************************************
-2024-06-09 02:23:16,600 p=18500 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:23:16,601 p=18500 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:23:16,604 p=18500 u=mpi n=ansible | TASK [nvm : Carregar NVM e instalar Node.js] *******************************************************************************
-2024-06-09 02:23:20,511 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:21,228 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:21,235 p=18500 u=mpi n=ansible | TASK [golang : Baixar e instalar Golang] ***********************************************************************************
-2024-06-09 02:23:34,707 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:34,725 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:34,728 p=18500 u=mpi n=ansible | TASK [golang : Extrair Golang] *********************************************************************************************
-2024-06-09 02:23:40,955 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:40,956 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:40,961 p=18500 u=mpi n=ansible | TASK [golang : Adicionar Golang ao perfil] *********************************************************************************
-2024-06-09 02:23:41,146 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:41,155 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:41,162 p=18500 u=mpi n=ansible | TASK [ssh : Gerar chave SSH se não existir] ********************************************************************************
-2024-06-09 02:23:41,427 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:41,516 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:41,520 p=18500 u=mpi n=ansible | TASK [ssh : Copiar chave pública] ******************************************************************************************
-2024-06-09 02:23:41,923 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:41,924 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:41,927 p=18500 u=mpi n=ansible | TASK [ssh : Copiar chave privada] ******************************************************************************************
-2024-06-09 02:23:42,278 p=18500 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:23:42,278 p=18500 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:23:42,281 p=18500 u=mpi n=ansible | TASK [ssh : Copiar arquivo de configuração SSH] ****************************************************************************
-2024-06-09 02:23:42,291 p=18500 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"msg": "The 'file' lookup had an issue accessing the file '~/config'. file not found, use -vvvvv to see paths searched"}
-2024-06-09 02:23:42,297 p=18500 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"msg": "The 'file' lookup had an issue accessing the file '~/config'. file not found, use -vvvvv to see paths searched"}
-2024-06-09 02:23:42,298 p=18500 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:23:42,298 p=18500 u=mpi n=ansible | ansible_host1              : ok=11   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:23:42,298 p=18500 u=mpi n=ansible | ansible_host2              : ok=11   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:23:42,298 p=18500 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:25:15,198 p=26491 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:25:15,202 p=26491 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:25:16,085 p=26491 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:25:16,096 p=26491 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:25:16,272 p=26491 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:25:16,277 p=26491 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:25:16,433 p=26491 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:25:16,449 p=26491 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:25:16,452 p=26491 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:25:16,537 p=26491 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.3: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:25:16,538 p=26491 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.2: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:25:16,538 p=26491 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:25:16,538 p=26491 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:25:16,538 p=26491 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:25:16,539 p=26491 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:25:35,810 p=26946 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:25:35,814 p=26946 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:25:36,674 p=26946 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:25:36,686 p=26946 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:25:36,859 p=26946 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:25:36,864 p=26946 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:25:36,986 p=26946 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:25:37,006 p=26946 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:25:37,009 p=26946 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:25:37,087 p=26946 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.3: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:25:37,087 p=26946 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nroot@172.32.0.2: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:25:37,088 p=26946 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:25:37,088 p=26946 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:25:37,088 p=26946 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:25:37,088 p=26946 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:27:04,961 p=28438 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:27:04,966 p=28438 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:27:05,846 p=28438 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:27:05,858 p=28438 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:27:06,047 p=28438 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:27:06,052 p=28438 u=mpi n=ansible | TASK [Remover entradas antigas de known_hosts] *****************************************************************************
-2024-06-09 02:27:06,177 p=28438 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:27:06,193 p=28438 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:27:06,196 p=28438 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:27:06,871 p=28438 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:27:06,872 p=28438 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:27:06,883 p=28438 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
-2024-06-09 02:27:57,311 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:00,518 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:00,527 p=28438 u=mpi n=ansible | TASK [nvm : Baixar script de instalação do NVM] ****************************************************************************
-2024-06-09 02:28:02,993 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:02,996 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:02,999 p=28438 u=mpi n=ansible | TASK [nvm : Adicionar NVM ao perfil] ***************************************************************************************
-2024-06-09 02:28:03,250 p=28438 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:28:03,251 p=28438 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:28:03,254 p=28438 u=mpi n=ansible | TASK [nvm : Carregar NVM e instalar Node.js] *******************************************************************************
-2024-06-09 02:28:06,784 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:07,279 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:07,286 p=28438 u=mpi n=ansible | TASK [golang : Baixar e instalar Golang] ***********************************************************************************
-2024-06-09 02:28:11,880 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:13,956 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:13,959 p=28438 u=mpi n=ansible | TASK [golang : Extrair Golang] *********************************************************************************************
-2024-06-09 02:28:20,012 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:20,017 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:20,021 p=28438 u=mpi n=ansible | TASK [golang : Adicionar Golang ao perfil] *********************************************************************************
-2024-06-09 02:28:20,211 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:20,211 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:20,219 p=28438 u=mpi n=ansible | TASK [ssh : Gerar chave SSH se não existir] ********************************************************************************
-2024-06-09 02:28:20,537 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:20,592 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:20,596 p=28438 u=mpi n=ansible | TASK [ssh : Copiar chave pública] ******************************************************************************************
-2024-06-09 02:28:21,042 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:21,043 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:21,046 p=28438 u=mpi n=ansible | TASK [ssh : Copiar chave privada] ******************************************************************************************
-2024-06-09 02:28:21,397 p=28438 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:28:21,397 p=28438 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:28:21,400 p=28438 u=mpi n=ansible | TASK [ssh : Copiar arquivo de configuração SSH] ****************************************************************************
-2024-06-09 02:28:21,410 p=28438 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"msg": "An unhandled exception occurred while templating '{{ lookup('file', '~/config') }}'. Error was a <class 'ansible.errors.AnsibleLookupError'>, original message: The 'file' lookup had an issue accessing the file '~/config'. file not found, use -vvvvv to see paths searched"}
-2024-06-09 02:28:21,416 p=28438 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"msg": "An unhandled exception occurred while templating '{{ lookup('file', '~/config') }}'. Error was a <class 'ansible.errors.AnsibleLookupError'>, original message: The 'file' lookup had an issue accessing the file '~/config'. file not found, use -vvvvv to see paths searched"}
-2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | ansible_host1              : ok=11   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | ansible_host2              : ok=11   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:28:21,417 p=28438 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:30:57,634 p=4688 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:30:57,648 p=4688 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:30:58,515 p=4688 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:30:58,527 p=4688 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
-2024-06-09 02:30:58,708 p=4688 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:30:58,713 p=4688 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
-2024-06-09 02:30:58,839 p=4688 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:30:58,863 p=4688 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:30:58,866 p=4688 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:30:59,527 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:30:59,539 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:30:59,549 p=4688 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
-2024-06-09 02:31:03,072 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:03,227 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:03,235 p=4688 u=mpi n=ansible | TASK [nvm : Baixar script de instalação do NVM] ****************************************************************************
-2024-06-09 02:31:04,715 p=4688 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:31:04,734 p=4688 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:31:04,738 p=4688 u=mpi n=ansible | TASK [nvm : Adicionar NVM ao perfil] ***************************************************************************************
-2024-06-09 02:31:04,968 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:04,969 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:04,972 p=4688 u=mpi n=ansible | TASK [nvm : Carregar NVM e instalar Node.js] *******************************************************************************
-2024-06-09 02:31:05,704 p=4688 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:31:05,705 p=4688 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:31:05,712 p=4688 u=mpi n=ansible | TASK [golang : Baixar e instalar Golang] ***********************************************************************************
-2024-06-09 02:31:07,016 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:07,207 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:07,210 p=4688 u=mpi n=ansible | TASK [golang : Extrair Golang] *********************************************************************************************
-2024-06-09 02:31:11,116 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:11,140 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:11,143 p=4688 u=mpi n=ansible | TASK [golang : Adicionar Golang ao perfil] *********************************************************************************
-2024-06-09 02:31:11,328 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:11,332 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:11,341 p=4688 u=mpi n=ansible | TASK [ssh : Gerar chave SSH se não existir] ********************************************************************************
-2024-06-09 02:31:11,510 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:11,513 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:11,516 p=4688 u=mpi n=ansible | TASK [ssh : Copiar chave pública] ******************************************************************************************
-2024-06-09 02:31:11,905 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:11,905 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:11,908 p=4688 u=mpi n=ansible | TASK [ssh : Copiar chave privada] ******************************************************************************************
-2024-06-09 02:31:12,240 p=4688 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:31:12,240 p=4688 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:31:12,243 p=4688 u=mpi n=ansible | TASK [ssh : Copiar arquivo de configuração SSH] ****************************************************************************
-2024-06-09 02:31:12,629 p=4688 u=mpi n=ansible | changed: [ansible_host2]
-2024-06-09 02:31:12,630 p=4688 u=mpi n=ansible | changed: [ansible_host1]
-2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | ansible_host1              : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | ansible_host2              : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:31:12,652 p=4688 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:36:20,666 p=10073 u=mpi n=ansible | - Role roles/docker was created successfully
-2024-06-09 02:36:28,013 p=10189 u=mpi n=ansible | - Role roles/zsh was created successfully
-2024-06-09 02:44:58,524 p=13966 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:44:58,528 p=13966 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:44:59,400 p=13966 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:44:59,411 p=13966 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
-2024-06-09 02:44:59,581 p=13966 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:44:59,586 p=13966 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
-2024-06-09 02:44:59,731 p=13966 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:44:59,747 p=13966 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:44:59,752 p=13966 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:44:59,825 p=13966 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.3: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:44:59,825 p=13966 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.2: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:44:59,826 p=13966 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:45:24,093 p=14454 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:45:24,097 p=14454 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:45:24,947 p=14454 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:45:24,960 p=14454 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
-2024-06-09 02:45:25,128 p=14454 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:45:25,133 p=14454 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
-2024-06-09 02:45:25,255 p=14454 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:45:25,272 p=14454 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:45:25,278 p=14454 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:45:25,356 p=14454 u=mpi n=ansible | fatal: [ansible_host1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.2' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.2: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:45:25,365 p=14454 u=mpi n=ansible | fatal: [ansible_host2]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '172.32.0.3' (ECDSA) to the list of known hosts.\r\nubuntu@172.32.0.3: Permission denied (publickey).", "unreachable": true}
-2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:45:25,366 p=14454 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:49:58,323 p=19425 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:49:58,327 p=19425 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:49:59,208 p=19425 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:49:59,219 p=19425 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
-2024-06-09 02:49:59,389 p=19425 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:49:59,394 p=19425 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
-2024-06-09 02:49:59,516 p=19425 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:49:59,532 p=19425 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:49:59,536 p=19425 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:49:59,738 p=19425 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"msg": "Missing sudo password"}
-2024-06-09 02:49:59,738 p=19425 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"msg": "Missing sudo password"}
-2024-06-09 02:49:59,738 p=19425 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
-2024-06-09 02:49:59,739 p=19425 u=mpi n=ansible | ansible_host1              : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:49:59,739 p=19425 u=mpi n=ansible | ansible_host2              : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:49:59,739 p=19425 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-2024-06-09 02:52:21,576 p=20843 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:52:21,580 p=20843 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:52:22,442 p=20843 u=mpi n=ansible | ok: [localhost]
-2024-06-09 02:52:22,453 p=20843 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
-2024-06-09 02:52:22,622 p=20843 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:52:22,627 p=20843 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
-2024-06-09 02:52:22,745 p=20843 u=mpi n=ansible | changed: [localhost]
-2024-06-09 02:52:22,762 p=20843 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
-2024-06-09 02:52:22,767 p=20843 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
-2024-06-09 02:52:23,445 p=20843 u=mpi n=ansible | ok: [ansible_host1]
-2024-06-09 02:52:23,446 p=20843 u=mpi n=ansible | ok: [ansible_host2]
-2024-06-09 02:52:23,457 p=20843 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:40:15,661 p=12564 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:40:15,666 p=12564 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:40:16,565 p=12564 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:40:16,577 p=12564 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:40:16,767 p=12564 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:40:16,772 p=12564 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:40:16,905 p=12564 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:40:16,927 p=12564 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:40:16,932 p=12564 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:40:17,629 p=12564 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:40:17,631 p=12564 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:40:17,642 p=12564 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:40:21,502 p=12564 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:40:21,559 p=12564 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:40:21,566 p=12564 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:40:24,870 p=12564 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:40:24,882 p=12564 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:40:24,885 p=12564 u=mpi n=ansible | TASK [iptables : Limpar regras atuais do iptables] *************************************************************************
+2024-06-09 08:40:25,105 p=12564 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables", "-F"], "delta": "0:00:00.013160", "end": "2024-06-09 11:40:25.080189", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.067029", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,106 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,107 p=12564 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables", "-F"], "delta": "0:00:00.008281", "end": "2024-06-09 11:40:25.080484", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.072203", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,107 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,110 p=12564 u=mpi n=ansible | TASK [iptables : Limpar regras customizadas do iptables] *******************************************************************
+2024-06-09 08:40:25,320 p=12564 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables", "-X"], "delta": "0:00:00.002440", "end": "2024-06-09 11:40:25.294700", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.292260", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,320 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,323 p=12564 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables", "-X"], "delta": "0:00:00.002511", "end": "2024-06-09 11:40:25.299356", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.296845", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,323 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,326 p=12564 u=mpi n=ansible | TASK [iptables : Limpar regras NAT do iptables] ****************************************************************************
+2024-06-09 08:40:25,516 p=12564 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables", "-t", "nat", "-F"], "delta": "0:00:00.002068", "end": "2024-06-09 11:40:25.492762", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.490694", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,516 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,517 p=12564 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables", "-t", "nat", "-F"], "delta": "0:00:00.001982", "end": "2024-06-09 11:40:25.495044", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.493062", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,517 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,521 p=12564 u=mpi n=ansible | TASK [iptables : Limpar regras customizadas NAT do iptables] ***************************************************************
+2024-06-09 08:40:25,706 p=12564 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables", "-t", "nat", "-X"], "delta": "0:00:00.002207", "end": "2024-06-09 11:40:25.681517", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.679310", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,706 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,713 p=12564 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables", "-t", "nat", "-X"], "delta": "0:00:00.002523", "end": "2024-06-09 11:40:25.691663", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.689140", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,713 p=12564 u=mpi n=ansible | ...ignoring
+2024-06-09 08:40:25,716 p=12564 u=mpi n=ansible | TASK [iptables : Permitir tráfego de loopback (localhost)] *****************************************************************
+2024-06-09 08:40:25,907 p=12564 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables", "-t", "filter", "-A", "INPUT", "-j", "ACCEPT", "-i", "lo"], "delta": "0:00:00.002700", "end": "2024-06-09 11:40:25.885254", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.882554", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,909 p=12564 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables", "-t", "filter", "-A", "INPUT", "-j", "ACCEPT", "-i", "lo"], "delta": "0:00:00.002953", "end": "2024-06-09 11:40:25.885527", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:40:25.882574", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:40:25,910 p=12564 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:40:25,910 p=12564 u=mpi n=ansible | ansible_host1              : ok=7    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=4   
+2024-06-09 08:40:25,910 p=12564 u=mpi n=ansible | ansible_host2              : ok=7    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=4   
+2024-06-09 08:40:25,910 p=12564 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:42:39,845 p=15774 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:42:39,849 p=15774 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:42:40,764 p=15774 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:42:40,775 p=15774 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:42:40,966 p=15774 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:42:40,971 p=15774 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:42:41,097 p=15774 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:42:41,118 p=15774 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:42:41,122 p=15774 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:42:41,816 p=15774 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:42:41,818 p=15774 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:42:41,829 p=15774 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:42:44,903 p=15774 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:42:44,905 p=15774 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:42:44,912 p=15774 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:42:47,911 p=15774 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:42:47,919 p=15774 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:42:47,923 p=15774 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:42:48,369 p=15774 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:42:48,370 p=15774 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:42:48,372 p=15774 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:42:48,722 p=15774 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:42:48,722 p=15774 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:42:48,725 p=15774 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:42:48,908 p=15774 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables-restore", "<", "/etc/iptables/rules.v4"], "delta": "0:00:00.002746", "end": "2024-06-09 11:42:48.885414", "msg": "non-zero return code", "rc": 1, "start": "2024-06-09 11:42:48.882668", "stderr": "Unknown arguments found on commandline", "stderr_lines": ["Unknown arguments found on commandline"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:42:48,914 p=15774 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables-restore", "<", "/etc/iptables/rules.v4"], "delta": "0:00:00.002372", "end": "2024-06-09 11:42:48.892441", "msg": "non-zero return code", "rc": 1, "start": "2024-06-09 11:42:48.890069", "stderr": "Unknown arguments found on commandline", "stderr_lines": ["Unknown arguments found on commandline"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:42:48,914 p=15774 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:42:48,914 p=15774 u=mpi n=ansible | ansible_host1              : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:42:48,915 p=15774 u=mpi n=ansible | ansible_host2              : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:42:48,915 p=15774 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:43:53,684 p=18274 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:43:53,688 p=18274 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:43:54,561 p=18274 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:43:54,572 p=18274 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:43:54,757 p=18274 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:43:54,762 p=18274 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:43:54,894 p=18274 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:43:54,911 p=18274 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:43:54,916 p=18274 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:43:55,583 p=18274 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:43:55,588 p=18274 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:43:55,599 p=18274 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:43:58,799 p=18274 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:43:58,865 p=18274 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:43:58,874 p=18274 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:44:01,790 p=18274 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:44:01,867 p=18274 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:44:01,871 p=18274 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:44:02,347 p=18274 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:44:02,347 p=18274 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:44:02,350 p=18274 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:44:02,693 p=18274 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:44:02,709 p=18274 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:44:02,712 p=18274 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:44:02,896 p=18274 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": "iptables-restore < /etc/iptables/rules.v4", "delta": "0:00:00.004177", "end": "2024-06-09 11:44:02.874014", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:44:02.869837", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:44:02,897 p=18274 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": "iptables-restore < /etc/iptables/rules.v4", "delta": "0:00:00.003887", "end": "2024-06-09 11:44:02.876727", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:44:02.872840", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:44:02,897 p=18274 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:44:02,897 p=18274 u=mpi n=ansible | ansible_host1              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:44:02,897 p=18274 u=mpi n=ansible | ansible_host2              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:44:02,898 p=18274 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:45:55,225 p=21231 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:45:55,229 p=21231 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:45:56,089 p=21231 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:45:56,101 p=21231 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:45:56,272 p=21231 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:45:56,277 p=21231 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:45:56,404 p=21231 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:45:56,422 p=21231 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:45:56,426 p=21231 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:45:57,111 p=21231 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:45:57,112 p=21231 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:45:57,123 p=21231 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:46:00,415 p=21231 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:46:00,428 p=21231 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:46:00,436 p=21231 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:46:03,593 p=21231 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:46:03,610 p=21231 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:46:03,613 p=21231 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:46:04,054 p=21231 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:46:04,054 p=21231 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:46:04,057 p=21231 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:46:04,433 p=21231 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:46:04,434 p=21231 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:46:04,437 p=21231 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:46:04,629 p=21231 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": "iptables-restore < /etc/iptables/rules.v4", "delta": "0:00:00.008120", "end": "2024-06-09 11:46:04.607309", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:46:04.599189", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:46:04,629 p=21231 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": "iptables-restore < /etc/iptables/rules.v4", "delta": "0:00:00.014959", "end": "2024-06-09 11:46:04.607308", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:46:04.592349", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:46:04,630 p=21231 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:46:04,630 p=21231 u=mpi n=ansible | ansible_host1              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:46:04,630 p=21231 u=mpi n=ansible | ansible_host2              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:46:04,630 p=21231 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:51:05,227 p=25953 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:51:05,231 p=25953 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:51:06,106 p=25953 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:51:06,117 p=25953 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:51:06,303 p=25953 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:51:06,308 p=25953 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:51:06,435 p=25953 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:51:06,452 p=25953 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:51:06,456 p=25953 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:51:07,126 p=25953 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:51:07,132 p=25953 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:51:07,143 p=25953 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:51:10,385 p=25953 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:51:10,453 p=25953 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:51:10,462 p=25953 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:51:13,391 p=25953 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:51:13,422 p=25953 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:51:13,425 p=25953 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:51:13,867 p=25953 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:51:13,867 p=25953 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:51:13,870 p=25953 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:51:14,212 p=25953 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:51:14,214 p=25953 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:51:14,217 p=25953 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:51:14,406 p=25953 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": "sudo iptables-restore < /etc/iptables/rules.v4", "delta": "0:00:00.008547", "end": "2024-06-09 11:51:14.382457", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:51:14.373910", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:51:14,413 p=25953 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": "sudo iptables-restore < /etc/iptables/rules.v4", "delta": "0:00:00.007988", "end": "2024-06-09 11:51:14.387558", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:51:14.379570", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:51:14,414 p=25953 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:51:14,414 p=25953 u=mpi n=ansible | ansible_host1              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:51:14,414 p=25953 u=mpi n=ansible | ansible_host2              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:51:14,414 p=25953 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:52:12,027 p=28373 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:52:12,031 p=28373 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:52:12,893 p=28373 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:52:12,904 p=28373 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:52:13,088 p=28373 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:52:13,093 p=28373 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:52:13,219 p=28373 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:52:13,238 p=28373 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:52:13,242 p=28373 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:52:13,782 p=28373 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:52:13,784 p=28373 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:52:13,795 p=28373 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:52:16,833 p=28373 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:52:16,900 p=28373 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:52:16,907 p=28373 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:52:19,786 p=28373 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:52:19,786 p=28373 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:52:19,790 p=28373 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:52:20,230 p=28373 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:52:20,230 p=28373 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:52:20,236 p=28373 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:52:20,596 p=28373 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:52:20,597 p=28373 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:52:20,600 p=28373 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:52:20,786 p=28373 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": "cat /etc/iptables/rules.v4 | sudo iptables-restore\n", "delta": "0:00:00.007528", "end": "2024-06-09 11:52:20.763242", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:52:20.755714", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:52:20,790 p=28373 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": "cat /etc/iptables/rules.v4 | sudo iptables-restore\n", "delta": "0:00:00.007174", "end": "2024-06-09 11:52:20.768033", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:52:20.760859", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:52:20,790 p=28373 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:52:20,791 p=28373 u=mpi n=ansible | ansible_host1              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:52:20,791 p=28373 u=mpi n=ansible | ansible_host2              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:52:20,791 p=28373 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:55:23,861 p=31877 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:55:23,865 p=31877 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:55:24,746 p=31877 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:55:24,758 p=31877 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:55:24,938 p=31877 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:55:24,943 p=31877 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:55:25,074 p=31877 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:55:25,092 p=31877 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:55:25,096 p=31877 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:55:25,781 p=31877 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:55:25,782 p=31877 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:55:25,793 p=31877 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:55:28,985 p=31877 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:55:29,074 p=31877 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:55:29,081 p=31877 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:55:32,050 p=31877 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:55:32,064 p=31877 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:55:32,068 p=31877 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:55:32,533 p=31877 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:55:32,534 p=31877 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:55:32,537 p=31877 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:55:32,886 p=31877 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:55:32,886 p=31877 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:55:32,889 p=31877 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:55:33,069 p=31877 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables-restore", "/etc/iptables/rules.v4"], "delta": "0:00:00.002501", "end": "2024-06-09 11:55:33.046184", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:55:33.043683", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:55:33,071 p=31877 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables-restore", "/etc/iptables/rules.v4"], "delta": "0:00:00.002481", "end": "2024-06-09 11:55:33.050536", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 11:55:33.048055", "stderr": "iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables-restore v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 08:55:33,072 p=31877 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:55:33,072 p=31877 u=mpi n=ansible | ansible_host1              : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:55:33,072 p=31877 u=mpi n=ansible | ansible_host2              : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:55:33,073 p=31877 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:58:50,098 p=8260 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:58:50,102 p=8260 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:58:50,967 p=8260 u=mpi n=ansible | ok: [localhost]
+2024-06-09 08:58:50,978 p=8260 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 08:58:51,164 p=8260 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:58:51,169 p=8260 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 08:58:51,298 p=8260 u=mpi n=ansible | changed: [localhost]
+2024-06-09 08:58:51,315 p=8260 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 08:58:51,319 p=8260 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 08:58:52,007 p=8260 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:58:52,008 p=8260 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:58:52,019 p=8260 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 08:59:43,293 p=8260 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:59:44,339 p=8260 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:59:44,347 p=8260 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 08:59:47,742 p=8260 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 08:59:47,746 p=8260 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 08:59:47,750 p=8260 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 08:59:48,214 p=8260 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:59:48,214 p=8260 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:59:48,217 p=8260 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 08:59:48,561 p=8260 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 08:59:48,564 p=8260 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 08:59:48,567 p=8260 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 08:59:48,746 p=8260 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables-legacy-restore", "/etc/iptables/rules.v4"], "delta": "0:00:00.002084", "end": "2024-06-09 11:59:48.723982", "msg": "non-zero return code", "rc": 2, "start": "2024-06-09 11:59:48.721898", "stderr": "iptables-restore v1.8.10 (legacy): iptables-restore: unable to initialize table 'filter'\nError occurred at line: 1\nTry `iptables-restore -h' or 'iptables-restore --help' for more information.", "stderr_lines": ["iptables-restore v1.8.10 (legacy): iptables-restore: unable to initialize table 'filter'", "Error occurred at line: 1", "Try `iptables-restore -h' or 'iptables-restore --help' for more information."], "stdout": "", "stdout_lines": []}
+2024-06-09 08:59:48,753 p=8260 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables-legacy-restore", "/etc/iptables/rules.v4"], "delta": "0:00:00.002042", "end": "2024-06-09 11:59:48.731111", "msg": "non-zero return code", "rc": 2, "start": "2024-06-09 11:59:48.729069", "stderr": "iptables-restore v1.8.10 (legacy): iptables-restore: unable to initialize table 'filter'\nError occurred at line: 1\nTry `iptables-restore -h' or 'iptables-restore --help' for more information.", "stderr_lines": ["iptables-restore v1.8.10 (legacy): iptables-restore: unable to initialize table 'filter'", "Error occurred at line: 1", "Try `iptables-restore -h' or 'iptables-restore --help' for more information."], "stdout": "", "stdout_lines": []}
+2024-06-09 08:59:48,754 p=8260 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 08:59:48,754 p=8260 u=mpi n=ansible | ansible_host1              : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:59:48,754 p=8260 u=mpi n=ansible | ansible_host2              : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 08:59:48,754 p=8260 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 10:19:39,301 p=24717 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 10:19:39,305 p=24717 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 10:19:40,207 p=24717 u=mpi n=ansible | ok: [localhost]
+2024-06-09 10:19:40,219 p=24717 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 10:19:40,395 p=24717 u=mpi n=ansible | changed: [localhost]
+2024-06-09 10:19:40,403 p=24717 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 10:19:40,534 p=24717 u=mpi n=ansible | changed: [localhost]
+2024-06-09 10:19:40,553 p=24717 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 10:19:40,557 p=24717 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 10:19:41,221 p=24717 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 10:19:41,222 p=24717 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 10:19:41,233 p=24717 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 10:19:44,639 p=24717 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 10:19:44,757 p=24717 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 10:19:44,770 p=24717 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 10:19:47,578 p=24717 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 10:19:47,619 p=24717 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 10:19:47,623 p=24717 u=mpi n=ansible | TASK [iptables : Limpar regras atuais do iptables] *************************************************************************
+2024-06-09 10:19:47,804 p=24717 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables", "-F"], "delta": "0:00:00.002032", "end": "2024-06-09 13:19:47.781149", "msg": "non-zero return code", "rc": 3, "start": "2024-06-09 13:19:47.779117", "stderr": "iptables v1.8.10 (legacy): can't initialize iptables table `filter': Permission denied (you must be root)\nPerhaps iptables or your kernel needs to be upgraded.", "stderr_lines": ["iptables v1.8.10 (legacy): can't initialize iptables table `filter': Permission denied (you must be root)", "Perhaps iptables or your kernel needs to be upgraded."], "stdout": "", "stdout_lines": []}
+2024-06-09 10:19:47,810 p=24717 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["iptables", "-F"], "delta": "0:00:00.002482", "end": "2024-06-09 13:19:47.786807", "msg": "non-zero return code", "rc": 3, "start": "2024-06-09 13:19:47.784325", "stderr": "iptables v1.8.10 (legacy): can't initialize iptables table `filter': Permission denied (you must be root)\nPerhaps iptables or your kernel needs to be upgraded.", "stderr_lines": ["iptables v1.8.10 (legacy): can't initialize iptables table `filter': Permission denied (you must be root)", "Perhaps iptables or your kernel needs to be upgraded."], "stdout": "", "stdout_lines": []}
+2024-06-09 10:19:47,811 p=24717 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 10:19:47,811 p=24717 u=mpi n=ansible | ansible_host1              : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 10:19:47,811 p=24717 u=mpi n=ansible | ansible_host2              : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 10:19:47,811 p=24717 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 10:22:38,649 p=27646 u=mpi n=ansible | - Role roles/nftables was created successfully
+2024-06-09 10:28:17,530 p=3628 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 10:28:17,535 p=3628 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 10:28:18,430 p=3628 u=mpi n=ansible | ok: [localhost]
+2024-06-09 10:28:18,443 p=3628 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 10:28:18,642 p=3628 u=mpi n=ansible | changed: [localhost]
+2024-06-09 10:28:18,648 p=3628 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 10:28:18,775 p=3628 u=mpi n=ansible | changed: [localhost]
+2024-06-09 10:28:18,792 p=3628 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 10:28:18,797 p=3628 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 10:28:19,469 p=3628 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 10:28:19,470 p=3628 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 10:28:19,480 p=3628 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 10:29:13,964 p=3628 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 10:29:14,203 p=3628 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 10:29:14,210 p=3628 u=mpi n=ansible | TASK [nftables : Instalar nftables] ****************************************************************************************
+2024-06-09 10:29:17,442 p=3628 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 10:29:17,518 p=3628 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 10:29:17,522 p=3628 u=mpi n=ansible | TASK [nftables : Copiar regras do nftables] ********************************************************************************
+2024-06-09 10:29:17,985 p=3628 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 10:29:17,986 p=3628 u=mpi n=ansible | changed: [ansible_host2]
+2024-06-09 10:29:17,989 p=3628 u=mpi n=ansible | TASK [nftables : Aplicar regras do nftables] *******************************************************************************
+2024-06-09 10:29:18,188 p=3628 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["nft", "-f", "/etc/nftables.conf"], "delta": "0:00:00.003994", "end": "2024-06-09 13:29:18.159422", "msg": "non-zero return code", "rc": 1, "start": "2024-06-09 13:29:18.155428", "stderr": "netlink: Error: cache initialization failed: Operation not permitted", "stderr_lines": ["netlink: Error: cache initialization failed: Operation not permitted"], "stdout": "", "stdout_lines": []}
+2024-06-09 10:29:18,189 p=3628 u=mpi n=ansible | fatal: [ansible_host2]: FAILED! => {"changed": true, "cmd": ["nft", "-f", "/etc/nftables.conf"], "delta": "0:00:00.004067", "end": "2024-06-09 13:29:18.159431", "msg": "non-zero return code", "rc": 1, "start": "2024-06-09 13:29:18.155364", "stderr": "netlink: Error: cache initialization failed: Operation not permitted", "stderr_lines": ["netlink: Error: cache initialization failed: Operation not permitted"], "stdout": "", "stdout_lines": []}
+2024-06-09 10:29:18,189 p=3628 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 10:29:18,190 p=3628 u=mpi n=ansible | ansible_host1              : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 10:29:18,190 p=3628 u=mpi n=ansible | ansible_host2              : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 10:29:18,190 p=3628 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:27:26,047 p=8563 u=mpi n=ansible | - Role roles/iptables was created successfully
+2024-06-09 11:30:27,653 p=16606 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:30:27,657 p=16606 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:30:28,547 p=16606 u=mpi n=ansible | ok: [localhost]
+2024-06-09 11:30:28,557 p=16606 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 11:30:28,730 p=16606 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:30:28,735 p=16606 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 11:30:28,868 p=16606 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:30:28,886 p=16606 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:30:28,891 p=16606 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:30:29,566 p=16606 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:30:29,570 p=16606 u=mpi n=ansible | ok: [ansible_host2]
+2024-06-09 11:30:29,581 p=16606 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 11:30:34,400 p=16606 u=mpi n=ansible |  [ERROR]: User interrupted execution
+
+2024-06-09 11:30:50,335 p=17823 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:30:50,339 p=17823 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:30:51,214 p=17823 u=mpi n=ansible | ok: [localhost]
+2024-06-09 11:30:51,225 p=17823 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 11:30:51,400 p=17823 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:30:51,405 p=17823 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 11:30:51,529 p=17823 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:30:51,547 p=17823 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:30:51,551 p=17823 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:30:52,091 p=17823 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:30:52,098 p=17823 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 11:31:22,185 p=17823 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 11:31:22,192 p=17823 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 11:31:25,004 p=17823 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:31:25,007 p=17823 u=mpi n=ansible | TASK [iptables : Limpar regras atuais do iptables] *************************************************************************
+2024-06-09 11:31:25,183 p=17823 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["/sbin/iptables", "-F"], "delta": "0:00:00.001810", "end": "2024-06-09 14:31:25.162456", "msg": "non-zero return code", "rc": 4, "start": "2024-06-09 14:31:25.160646", "stderr": "iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)", "stderr_lines": ["iptables v1.8.10 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)"], "stdout": "", "stdout_lines": []}
+2024-06-09 11:31:25,184 p=17823 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 11:31:25,184 p=17823 u=mpi n=ansible | ansible_host1              : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:31:25,184 p=17823 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:34:35,206 p=28522 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:34:35,211 p=28522 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:34:36,097 p=28522 u=mpi n=ansible | ok: [localhost]
+2024-06-09 11:34:36,109 p=28522 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 11:34:36,293 p=28522 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:34:36,297 p=28522 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 11:34:36,427 p=28522 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:34:36,455 p=28522 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:34:36,460 p=28522 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:34:37,175 p=28522 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:34:37,182 p=28522 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 11:35:12,620 p=28522 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 11:35:12,625 p=28522 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 11:35:15,464 p=28522 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:35:15,467 p=28522 u=mpi n=ansible | TASK [iptables : Limpar regras atuais do iptables] *************************************************************************
+2024-06-09 11:35:15,657 p=28522 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["/sbin/iptables-legacy", "-F"], "delta": "0:00:00.011918", "end": "2024-06-09 14:35:15.635180", "msg": "non-zero return code", "rc": 3, "start": "2024-06-09 14:35:15.623262", "stderr": "iptables v1.8.10 (legacy): can't initialize iptables table `filter': Permission denied (you must be root)\nPerhaps iptables or your kernel needs to be upgraded.", "stderr_lines": ["iptables v1.8.10 (legacy): can't initialize iptables table `filter': Permission denied (you must be root)", "Perhaps iptables or your kernel needs to be upgraded."], "stdout": "", "stdout_lines": []}
+2024-06-09 11:35:15,657 p=28522 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 11:35:15,658 p=28522 u=mpi n=ansible | ansible_host1              : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:35:15,658 p=28522 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:39:22,055 p=1217 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:39:22,060 p=1217 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:39:22,948 p=1217 u=mpi n=ansible | ok: [localhost]
+2024-06-09 11:39:22,959 p=1217 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 11:39:23,147 p=1217 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:39:23,151 p=1217 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 11:39:23,282 p=1217 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:39:23,299 p=1217 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:39:23,303 p=1217 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:39:24,010 p=1217 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:39:24,017 p=1217 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 11:39:26,968 p=1217 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:39:26,973 p=1217 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 11:39:29,822 p=1217 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:39:29,837 p=1217 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 11:39:30,293 p=1217 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 11:39:30,297 p=1217 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 11:39:30,645 p=1217 u=mpi n=ansible | changed: [ansible_host1]
+2024-06-09 11:39:30,649 p=1217 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 11:39:30,835 p=1217 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": ["iptables-legacy-restore", "<", "/etc/iptables/rules.v4"], "delta": "0:00:00.002987", "end": "2024-06-09 14:39:30.811816", "msg": "non-zero return code", "rc": 1, "start": "2024-06-09 14:39:30.808829", "stderr": "Unknown arguments found on commandline", "stderr_lines": ["Unknown arguments found on commandline"], "stdout": "", "stdout_lines": []}
+2024-06-09 11:39:30,835 p=1217 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 11:39:30,835 p=1217 u=mpi n=ansible | ansible_host1              : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:39:30,836 p=1217 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:40:19,164 p=2850 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:40:19,168 p=2850 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:40:20,039 p=2850 u=mpi n=ansible | ok: [localhost]
+2024-06-09 11:40:20,050 p=2850 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host1] ************************************************************
+2024-06-09 11:40:20,236 p=2850 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:40:20,241 p=2850 u=mpi n=ansible | TASK [Remover entrada antiga de known_hosts para ansible_host2] ************************************************************
+2024-06-09 11:40:20,377 p=2850 u=mpi n=ansible | changed: [localhost]
+2024-06-09 11:40:20,394 p=2850 u=mpi n=ansible | PLAY [Configurar servidores] ***********************************************************************************************
+2024-06-09 11:40:20,398 p=2850 u=mpi n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-06-09 11:40:20,961 p=2850 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:40:20,967 p=2850 u=mpi n=ansible | TASK [common : Atualizar apt e instalar pacotes básicos] *******************************************************************
+2024-06-09 11:40:23,781 p=2850 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:40:23,787 p=2850 u=mpi n=ansible | TASK [iptables : Instalar iptables-persistent] *****************************************************************************
+2024-06-09 11:40:27,043 p=2850 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:40:27,046 p=2850 u=mpi n=ansible | TASK [iptables : Copiar regras do iptables] ********************************************************************************
+2024-06-09 11:40:27,483 p=2850 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:40:27,489 p=2850 u=mpi n=ansible | TASK [iptables : Copiar regras do ip6tables] *******************************************************************************
+2024-06-09 11:40:27,821 p=2850 u=mpi n=ansible | ok: [ansible_host1]
+2024-06-09 11:40:27,834 p=2850 u=mpi n=ansible | TASK [iptables : Aplicar regras do iptables] *******************************************************************************
+2024-06-09 11:40:28,018 p=2850 u=mpi n=ansible | fatal: [ansible_host1]: FAILED! => {"changed": true, "cmd": "iptables-legacy-restore < /etc/iptables/rules.v4", "delta": "0:00:00.002691", "end": "2024-06-09 14:40:27.996383", "msg": "non-zero return code", "rc": 2, "start": "2024-06-09 14:40:27.993692", "stderr": "iptables-restore v1.8.10 (legacy): iptables-restore: unable to initialize table 'filter'\nError occurred at line: 1\nTry `iptables-restore -h' or 'iptables-restore --help' for more information.", "stderr_lines": ["iptables-restore v1.8.10 (legacy): iptables-restore: unable to initialize table 'filter'", "Error occurred at line: 1", "Try `iptables-restore -h' or 'iptables-restore --help' for more information."], "stdout": "", "stdout_lines": []}
+2024-06-09 11:40:28,019 p=2850 u=mpi n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-06-09 11:40:28,019 p=2850 u=mpi n=ansible | ansible_host1              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-09 11:40:28,019 p=2850 u=mpi n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

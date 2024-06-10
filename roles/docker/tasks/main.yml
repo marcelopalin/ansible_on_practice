@@ -35,9 +35,8 @@
     groups: docker
     append: yes
 
-- name: Iniciar e habilitar Docker
+- name: Iniciar Docker
   become: yes
-  systemd:
+  service:
     name: docker
-    enabled: yes
     state: started

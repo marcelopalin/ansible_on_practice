@@ -8,14 +8,14 @@ services:
     tty: true
     restart: always
 
-  ansible_host2:
-    build: .
-    container_name: ansible_host2
-    networks:
-      ansible_net:
-        ipv4_address: 172.32.0.3
-    tty: true
-    restart: always
+  # ansible_host2:
+  #   build: .
+  #   container_name: ansible_host2
+  #   networks:
+  #     ansible_net:
+  #       ipv4_address: 172.32.0.3
+  #   tty: true
+  #   restart: always
 
 networks:
   ansible_net:

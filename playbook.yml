@@ -21,6 +21,7 @@
     ssh_config: "{{ lookup('file', '/home/' ~ host_user ~ '/.ssh/config') }}"
   roles:
     - role: common
+    - role: iptables
     - role: nvm
     - role: golang
     - role: ssh

@@ -15,6 +15,7 @@
       - tree
       - unzip
       - build-essential
+      - iptables-persistent
     state: present
     update_cache: yes
 
